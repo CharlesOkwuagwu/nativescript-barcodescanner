@@ -151,8 +151,8 @@ export class BarcodeScanner {
         intent.putExtra(com.google.zxing.client.android.Intents.Scan.SAVE_HISTORY, false);
 
         // rectangle size can be controlled as well (but don't bother as of yet)
-        // intent.putExtra(com.google.zxing.client.android.Intents.Scan.WIDTH, 200);
-        // intent.putExtra(com.google.zxing.client.android.Intents.Scan.HEIGHT, 200);
+        intent.putExtra(com.google.zxing.client.android.Intents.Scan.WIDTH, 200);
+        intent.putExtra(com.google.zxing.client.android.Intents.Scan.HEIGHT, 200);
 
         // required for the 'stop' function
         if (!this.broadcastManager) {
